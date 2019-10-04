@@ -14,6 +14,7 @@ deepsort using deep cosine metric learning  &  hog feature extractor & darknet
 </pre>
 
 usage 
+<pre>
 0.1 chmod a+x make_ordinary.sh
 0.2 chmod a+x make_jetson.sh
 0.3 chmod a+x clean.sh
