@@ -1,0 +1,10 @@
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/install/strip.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/install/local.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/install.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/uselib_track.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/list_install_components.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/dark.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/rebuild_cache.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/uselib.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/edit_cache.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/darknet.dir

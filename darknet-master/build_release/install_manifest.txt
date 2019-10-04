@@ -1,0 +1,10 @@
+/home/ixtiyor/Downloads/my_proj/darknet-master/libdark.so
+/home/ixtiyor/Downloads/my_proj/darknet-master/include/darknet/darknet.h
+/home/ixtiyor/Downloads/my_proj/darknet-master/include/darknet/yolo_v2_class.hpp
+/home/ixtiyor/Downloads/my_proj/darknet-master/uselib
+/home/ixtiyor/Downloads/my_proj/darknet-master/darknet
+/home/ixtiyor/Downloads/my_proj/darknet-master/uselib_track
+/home/ixtiyor/Downloads/my_proj/darknet-master/share/darknet/DarknetTargets.cmake
+/home/ixtiyor/Downloads/my_proj/darknet-master/share/darknet/DarknetTargets-release.cmake
+/home/ixtiyor/Downloads/my_proj/darknet-master/share/darknet/DarknetConfig.cmake
+/home/ixtiyor/Downloads/my_proj/darknet-master/share/darknet/DarknetConfigVersion.cmake

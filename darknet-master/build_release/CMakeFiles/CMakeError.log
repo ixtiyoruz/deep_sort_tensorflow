@@ -1,0 +1,63 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_552aa/fast && /usr/bin/make -f CMakeFiles/cmTC_552aa.dir/build.make CMakeFiles/cmTC_552aa.dir/build
+make[1]: Entering directory '/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_552aa.dir/src.c.o
+/usr/bin/cc   -fPIC -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_552aa.dir/src.c.o   -c /home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_552aa
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_552aa.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_552aa.dir/src.c.o  -o cmTC_552aa 
+CMakeFiles/cmTC_552aa.dir/src.c.o: In function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+src.c:(.text+0x4a): undefined reference to `pthread_detach'
+src.c:(.text+0x5b): undefined reference to `pthread_join'
+src.c:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_552aa.dir/build.make:86: recipe for target 'cmTC_552aa' failed
+make[1]: *** [cmTC_552aa] Error 1
+make[1]: Leaving directory '/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_552aa/fast' failed
+make: *** [cmTC_552aa/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8cdd3/fast && /usr/bin/make -f CMakeFiles/cmTC_8cdd3.dir/build.make CMakeFiles/cmTC_8cdd3.dir/build
+make[1]: Entering directory '/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8cdd3.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8cdd3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.15/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8cdd3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8cdd3.dir/link.txt --verbose=1
+/usr/bin/cc -fPIC -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8cdd3.dir/CheckFunctionExists.c.o  -o cmTC_8cdd3 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_8cdd3.dir/build.make:86: recipe for target 'cmTC_8cdd3' failed
+make[1]: *** [cmTC_8cdd3] Error 1
+make[1]: Leaving directory '/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_8cdd3/fast' failed
+make: *** [cmTC_8cdd3/fast] Error 2
+
+
+

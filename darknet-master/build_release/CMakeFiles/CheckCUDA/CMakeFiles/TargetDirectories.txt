@@ -1,0 +1,2 @@
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CheckCUDA/CMakeFiles/rebuild_cache.dir
+/home/ixtiyor/Downloads/my_proj/darknet-master/build_release/CMakeFiles/CheckCUDA/CMakeFiles/edit_cache.dir
