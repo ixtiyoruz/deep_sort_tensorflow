@@ -28,6 +28,3 @@ references:
 https://github.com/AlexeyAB/darknet
 https://github.com/sephirothhua/DeepSort_yoloV3-HOG_feature
 </pre>
-
-to do:
-1. using one shot learning based deep learning feature extractor
