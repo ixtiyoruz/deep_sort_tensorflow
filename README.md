@@ -25,7 +25,7 @@ usage
 1. sudo ./clean.sh
 2. make_ordinary.sh
 3. download weight files from https://github.com/AlexeyAB/darknet
-4. download weight checkpoints from https://github.com/nwojke/deep_sort and put them in the folder  /model
+4. download weight checkpoints from https://github.com/nwojke/cosine_metric_learning and put them in the folder  /model
 5. ./yolo_console_dll {names file} {cfg file} {weights file} {video file or web_camera for web camera} {skip rate} {thresh} 
 </pre>
 if you want to compile it for aarch64 devices then go with make_jetson.sh
