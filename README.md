@@ -6,8 +6,9 @@ deepsort using deep cosine metric learning  &  hog feature extractor & darknet
 <pre>
   bazel build --jobs=12 --config opt --config cuda  --config monolithic tensorflow:libtensorflow_cc.so
 </pre>
-in order to install tensorflow for jetson products which has aarch64 architecture you should follow https://devtalk.nvidia.com/default/topic/1055131/jetson-agx-xavier/building-tensorflow-1-13-on-jetson-xavier/ untill configure finished and then run the command above.
-
+- in order to install tensorflow for jetson products which has aarch64 architecture you should follow https://devtalk.nvidia.com/default/topic/1055131/jetson-agx-xavier/building-tensorflow-1-13-on-jetson-xavier/ untill configure finished and then run the command above.
+- after it  finished crating .so file , you have to go into /tensorflow/tensorflow/contrib/makefile and run the command ./build_all_linux.sh
+- i uploaded already built tensorflow for jetson nano here (i think it will work for all jetson products)  : https://drive.google.com/open?id=1iaTGCPxgs8DiTUhfZDj23e-zjXmpXB_t
 - according to whereabouts of your tensorflow, please change:
 <pre>
 1. make_ordinary.sh
