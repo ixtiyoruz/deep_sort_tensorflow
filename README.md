@@ -2,7 +2,7 @@
 
 deepsort using deep cosine metric learning  &  hog feature extractor & darknet
 
-- first of all please install tensorflow, and during installation after ./configure command use this command to build shared library:
+- first of all please install curl, cmake and then tensorflow, and during installation after ./configure command use this command to build shared library:
 <pre>
   bazel build --jobs=12 --config opt --config cuda  --config monolithic tensorflow:libtensorflow_cc.so
 </pre>
@@ -11,6 +11,8 @@ deepsort using deep cosine metric learning  &  hog feature extractor & darknet
 1. make_ordinary.sh
 2. make_jetson.sh
 3. tracker/makelib.sh
+4. CMakeLists_jetson.txt
+5. CMakeLists_ordinary.txt
 </pre>
 
 usage 
