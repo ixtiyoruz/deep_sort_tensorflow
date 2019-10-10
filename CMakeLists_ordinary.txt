@@ -49,7 +49,7 @@ PUBLIC ${TENSORFLOW_EXTERNAL_DIR}/external/protobuf_archive/src
 PUBLIC ${TENSORFLOW_EXTERNAL_DIR}/external/eigen_archive
 PUBLIC ${TENSORFLOW_EXTERNAL_DIR}/external/nsync/public
 #https://github.com/tensorflow/tensorflow/issues/22240#issuecomment-420782646
-PUBLIC /home/ixtiyor/Downloads/tensorflow/tensorflow/contrib/makefile/downloads/absl/
+PUBLIC /home/essys/Downloads/tensorflow/tensorflow/contrib/makefile/downloads/absl/
 #this project
 PUBLIC /api
 #we just put one directory if it fails you can add all manually ))

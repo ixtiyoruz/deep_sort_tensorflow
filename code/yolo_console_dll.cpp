@@ -84,7 +84,7 @@ int main(int argc, char *argv[])
     }
 
     int const skip_rate = (argc > 5) ? std::stof(argv[5]) : 3;
-    float const thresh = (argc > 6) ? std::stof(argv[5]) : 0.2;
+    float const thresh = (argc > 6) ? std::stof(argv[6]) : 0.2;
     std::cout << filename << std::endl;
     Detector detector(cfg_file, weights_file);
     std::cout << "weights are loaded" << std::endl;
@@ -131,7 +131,7 @@ int main(int argc, char *argv[])
 		start  = clock();
                 do {
                     
-                    if(k % 1 == 0){
+                    if(k % skip_rate == 0){
                         miss = false;
                     }else{
                         miss = true;

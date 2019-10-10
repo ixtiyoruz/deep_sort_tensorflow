@@ -9,8 +9,8 @@
 #include <iostream>
 using namespace tensorflow;
 
-#define TENSORFLOW_MODEL_META "/home/ixtiyor/Documents/deepsort/model/mars.ckpt.meta"
-#define TENSORFLOW_MODEL "/home/ixtiyor/Documents/deepsort/model/mars.ckpt"
+#define TENSORFLOW_MODEL_META "./model/mars.ckpt.meta"
+#define TENSORFLOW_MODEL "./model/mars.ckpt"
 
 FeatureTensor *FeatureTensor::instance = NULL;
 
@@ -57,10 +57,10 @@ bool FeatureTensor::init() {
 	Status status;
 	MetaGraphDef graph_def;
 	//tensorflow::GraphDef graph_def;//不同类型的文件不同的定义
-
+	printf("modelni o`qish:%s\n\n\n\n\n", "1");
 	status = ReadBinaryProto(tensorflow::Env::Default(), pathToGraph, &graph_def);
 	if(status.ok() == false) return false;
-
+	printf("graphni yaratish:%s\n\n\n\n\n", "1");
 	status = session->Create(graph_def.graph_def());
 	if(status.ok() == false) return false;
 	std::vector<std::string> node_names;
@@ -148,9 +148,10 @@ float* FeatureTensor::getRectsFeature_single(const cv::Mat& img, DETECTION_ROW& 
 	};
 
 	Status status = session->Run(feed_dict, outnames, {}, &output_tensors);
+        float* tempa = new float[0];
 	//std::cout << " status -- " << status.ok() << "\n\n";
 	if(status.ok() == false)
-	  return false;
+	  return tempa;
 	//here it is unknown whether output tensor size is actually 1
 	// float* tensor_buffer = output_tensors[0].flat<float>().data();
 	// for(int j = 0; j < feature_dim; j++){

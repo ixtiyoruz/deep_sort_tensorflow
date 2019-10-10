@@ -23,14 +23,14 @@ sudo cp ./darknet-master/libdarknet.so /usr/lib/
 
  
 # source code directory of tensorflow
-TF_DIR=/home/ixtiyor/Downloads/tensorflow/
+TF_DIR=/home/essys/Downloads/tensorflow/
 
 # external source code directory of tensorflow
-TF_EXTERNAL_DIR=/home/ixtiyor/Downloads/tensorflow/bazel-tensorflow
+TF_EXTERNAL_DIR=/home/essys/Downloads/tensorflow/bazel-tensorflow
 
 # bazel build directory of tensorflow where `libtensorflow.so` exists.
 # Please specify absolute path, otherwise cmake cannot find lib **. A
-TF_BUILD_DIR=/home/ixtiyor/Downloads/tensorflow/bazel-bin/tensorflow
+TF_BUILD_DIR=/home/essys/Downloads/tensorflow/bazel-bin/tensorflow
 
 
 cmake -DTENSORFLOW_DIR=${TF_DIR}\
