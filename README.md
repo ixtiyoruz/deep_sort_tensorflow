@@ -8,6 +8,8 @@ deepsort using deep cosine metric learning  &  hog feature extractor & darknet
 </pre>
 - in order to install tensorflow for jetson products which has aarch64 architecture you should follow https://devtalk.nvidia.com/default/topic/1055131/jetson-agx-xavier/building-tensorflow-1-13-on-jetson-xavier/ untill configure finished and then run the command above.
 - when it  finishes crating .so file , you have to go into /tensorflow/tensorflow/contrib/makefile and run the command ./build_all_linux.sh (it may fail at some point, it is ok  as long as you are not using whole tensorflow)
+- please install protoc latest version, for me i had to install from source using 
+    https://askubuntu.com/questions/1072683/how-can-i-install-protoc-on-ubuntu-16-04
 - download the repository
 - according to whereabouts of your tensorflow, please change:
 <pre>
