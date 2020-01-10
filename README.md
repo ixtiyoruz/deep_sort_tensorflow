@@ -11,7 +11,7 @@ deepsort using deep cosine metric learning  &  hog feature extractor & darknet
 - please install protoc, for me i had to install from source using 
     https://askubuntu.com/questions/1072683/how-can-i-install-protoc-on-ubuntu-16-04
     version of the protoc depends on the tensorflow version you can find your version using(just change tensorflow url to your version):
-    https://github.com/tensorflow/tensorflow/blob/590d6eef7e91a6a7392c8ffffb7b58f2e0c8bc6b/tensorflow/workspace.bzl#L419    
+    https://github.com/tensorflow/tensorflow/blob/r1.15/tensorflow/workspace.bzl#L419  
 - download the repository
 - according to whereabouts of your tensorflow, please change:
 <pre>
